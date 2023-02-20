@@ -1,26 +1,20 @@
 {
-  "name": "api",
+  "name": "mymovies",
   "version": "1.0.0",
-  "description": "API desenvolvida no programa Explorer",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./src/server.js",
-    "dev": "nodemon ./src/server.js",
-    "migrate": "knex migrate:latest"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daiaanebarbosaf/mymovies.git"
   },
   "keywords": [],
-  "author": "Daiane Barbosa Farias",
+  "author": "",
   "license": "ISC",
-  "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "express": "^4.18.2",
-    "express-async-errors": "^3.1.1",
-    "knex": "^2.4.2",
-    "lite-server": "^2.6.1",
-    "sqlite": "^4.1.2",
-    "sqlite3": "^5.1.4"
+  "bugs": {
+    "url": "https://github.com/daiaanebarbosaf/mymovies/issues"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.20"
-  }
+  "homepage": "https://github.com/daiaanebarbosaf/mymovies#readme"
 }

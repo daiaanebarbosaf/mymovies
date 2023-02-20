@@ -2,9 +2,9 @@ const express = require("express");
 
 const app = express();
 
-app.get("/", (request, response) => {
-  response.send("Hello Word!")
-})
+app.post("/users", (request, response) => {
+  response.send("Você chamou o post!");
+});
 
 const PORT = 3333;
 

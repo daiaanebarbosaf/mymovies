@@ -13,9 +13,11 @@
   "keywords": [],
   "author": "Daiane Barbosa Farias",
   "license": "ISC",
-  
   "bugs": {
     "url": "https://github.com/daiaanebarbosaf/mymovies/issues"
   },
-  "homepage": "https://github.com/daiaanebarbosaf/mymovies#readme"
+  "homepage": "https://github.com/daiaanebarbosaf/mymovies#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }

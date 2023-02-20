@@ -1,7 +1,7 @@
 {
   "name": "mymovies",
   "version": "1.0.0",
-  "description": "",
+  "description": "API desenvolvida no programa Explorer da Rocketseat.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,8 +11,9 @@
     "url": "git+https://github.com/daiaanebarbosaf/mymovies.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Daiane Barbosa Farias",
   "license": "ISC",
+  
   "bugs": {
     "url": "https://github.com/daiaanebarbosaf/mymovies/issues"
   },

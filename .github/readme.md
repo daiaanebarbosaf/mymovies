@@ -30,3 +30,5 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=flat&logo=sqlite&logoColor=white)&nbsp;
 
 ---
+
+Feito por Daiane Farias 👋  [Me acompanhe nas redes sociais!](https://daiaanebarbosaf.github.io/rocketlinks/)

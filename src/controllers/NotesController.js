@@ -6,6 +6,7 @@ class NotesController {
     const { title, description, rating, tags} = request.body;
     const user_id = request.user.id;
 
+
     const [movies_notes_id] = await knex("movies_notes").insert({
       title, 
       description, 
@@ -16,7 +17,8 @@ class NotesController {
     const tagsInsert = tags.map(name => {
       return {
         movies_notes_id,
-        name, user_id
+        name, 
+        user_id
       }
     });
 
@@ -65,6 +67,7 @@ class NotesController {
       .whereLike("movies_notes.title", `%${title}%`)
       .whereIn("name", filterTags)
       .innerJoin("movies_notes", "movies_notes.id", "movies_tags.movies_notes_id")
+      .groupBy("movies_notes.id")
       .orderBy("movies_notes.title")
 
     } else {

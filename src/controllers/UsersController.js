@@ -3,13 +3,13 @@ const AppError = require("../utils/AppError");
 
 const sqliteConnection = require("../database/sqlite");
 const UserRepository = require("../repositories/UserRepository");
-const userCreateService = require("../services/UserCreateService");
+const UserCreateService = require("../services/UserCreateService");
 
 class UsersController {
   async create(request, response){
     const { name, email, password } = request.body;
 
-    const userRepository = UserRepository();
+    const userRepository = new UserRepository();
     const userCreateService = UserCreateService(userRepository);
 
     await userCreateService.execute({name, email, password});

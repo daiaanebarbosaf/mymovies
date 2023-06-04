@@ -9,7 +9,7 @@ class UsersController {
   async create(request, response){
     const { name, email, password } = request.body;
 
-    const userRepository = new UserRepository();
+    const userRepository = UserRepository();
     const userCreateService = UserCreateService(userRepository);
 
     await userCreateService.execute({name, email, password});

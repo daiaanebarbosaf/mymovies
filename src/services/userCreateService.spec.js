@@ -18,10 +18,6 @@ describe("UserCreateService", () => {
     expect(userCreated).toHaveProperty("id");
   
   });
-
-  it("user not should be create with exists email", async () => {
-
-  });
   
 });
 

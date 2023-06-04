@@ -1,15 +1,17 @@
-const UserCreateService = require("./UserCreateService");
+const UserCreateService = require('./UserCreateService');
+const UserRepositoryInMemory = require("../repositories/UserRepositoryInMemory");
 
-it("user shold be create", () => {
+it("user shold be create", async () => {
   const user = {
     name: "User Test",
     email: "user@test.com",
     password: "123"
   };
 
-  const userCreateService = new UserCreateService();
+  const userRepositoryInMemory = new UserRepositoryInMemory();
+  const userCreateService = new UserCreateService(userRepositoryInMemory);
   const userCreated = await userCreateService.execute(user);
 
-  expect(userCreated).toHavePropety("id");
+  expect(userCreated).toHaveProperty("id");
 
 });
